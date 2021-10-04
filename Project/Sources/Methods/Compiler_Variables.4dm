@@ -1,0 +1,11 @@
+//%attributes = {"invisible":true,"preemptive":"capable"}
+C_REAL:C285(Button)
+C_REAL:C285(Demo)
+C_OBJECT:C1216(people)
+C_LONGINT:C283(vMs)
+C_LONGINT:C283(HelpGoto)
+C_OBJECT:C1216(LB_meta)
+C_LONGINT:C283(TOOLS_BUILD_ALL)
+C_VARIANT:C1683(TOOLS_FakeDate)
+C_LONGINT:C283(TOOLS_Populate)
+C_OBJECT:C1216(WParea)

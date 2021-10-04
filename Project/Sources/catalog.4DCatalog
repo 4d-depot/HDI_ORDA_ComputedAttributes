@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HDI_ORDA_ComputedAttributes" uuid="D74D1CFE96F4487287F1EE2C45535553" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="people" uuid="B2EE8676BD5348C1996D747A4F908EC5" id="1">
+		<field name="ID" uuid="F0269E704B0B4D1DA6523D08F53E0995" type="4" unique="true" autosequence="true" not_null="true" id="1">
+			<field_extra position="1"/>
+		</field>
+		<field name="lastname" uuid="30241093FD3E4030B00198C252FC1CAA" type="10" limiting_length="255" id="2">
+			<field_extra position="2" multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="firstname" uuid="495D5684674E408C9D143B8C4E0E678F" type="10" limiting_length="255" id="3">
+			<field_extra position="3" multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<primary_key field_name="ID" field_uuid="F0269E704B0B4D1DA6523D08F53E0995"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="2" displayable_fields_count="4">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="83.50390625" top="1.05859375" width="155.12890625" height="129.55859375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(MEN)" uuid="DB7A1291307E4D54AA66A64E7BCB393E" id="2" hide_in_REST="true">
+		<field name="ID" uuid="D39A288DA08A478BA662B880E2033C34" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Name" uuid="427512391DA845DEBEE65BF920E261A8" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Firstname" uuid="6491856950A34F1396949AAB068A97F0" type="10" limiting_length="255" never_null="true" id="3">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="Father" uuid="5F3FC363071C42FBA35234FC6831AF95" type="4" never_null="true" id="4"/>
+		<field name="Mother" uuid="A4381E4D16114441A1A59BDD1346F3DB" type="4" never_null="true" id="5"/>
+		<primary_key field_name="ID" field_uuid="D39A288DA08A478BA662B880E2033C34"/>
+		<table_extra trashed="true" input_form="(Input)" output_form="(Output)">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="768.13671875" top="67.859375" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(WOMEN)" uuid="389879CCACD747E99460D249A379CF0D" id="3" hide_in_REST="true">
+		<field name="ID" uuid="59154BF11E6742F3AB46A099CEA5A4AC" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Name" uuid="E4746B09B24F43979F15553C30BBC67E" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Firstname" uuid="E3F8FF0A4A1F46D389473A8D7DAAC197" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Father" uuid="3CC33276EF0A4C869CD5F61817109D81" type="4" never_null="true" id="4"/>
+		<field name="Mother" uuid="C1C14A071E0A460BAE8E35F519407362" type="4" never_null="true" id="5"/>
+		<primary_key field_name="ID" field_uuid="59154BF11E6742F3AB46A099CEA5A4AC"/>
+		<table_extra trashed="true" input_form="(Input)" output_form="(Output)">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="999.78125" top="73.8671875" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(FACES)" uuid="6D2C4CFB485A483784BEDEB5143C94DC" id="4" hide_in_REST="true">
+		<field name="ID" uuid="D5F66279C09841AC856E1252C1B71CAF" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Portrait" uuid="70649B6487974B2EABFE00A4D4F754D1" type="12" never_null="true" id="2"/>
+		<field name="Gender" uuid="A720B352D1B94CF9AB3B9CB8A25D1A54" type="1" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="D5F66279C09841AC856E1252C1B71CAF"/>
+		<table_extra trashed="true" input_form="(Input)" output_form="(Output)">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="1098.3359375" top="11.09375" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(PORTRAITS)" uuid="299C2A25C7094DB48BA87862515A7118" id="5" hide_in_REST="true">
+		<field name="ID" uuid="62ED083567D94B2EB28F28D75367D874" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="pict" uuid="462860D6A9E841FFB2A2B71AC0094FFA" type="12" never_null="true" id="2"/>
+		<field name="index" uuid="CD7F453997FC4CA6BDE73ECF48E2CC9B" type="10" limiting_length="255" never_null="true" id="3">
+			<field_extra multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="FullPath" uuid="C3281028F9524B9E857B7EBFCA32E5BC" type="10" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="62ED083567D94B2EB28F28D75367D874"/>
+		<table_extra input_form="Input" output_form="Output" trashed="true">
+			<editor_table_info displayable_fields_count="5">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="785.37109375" top="92.734375" width="323.57421875" height="162.6328125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(reports)" uuid="17BC51C0200A42A889BFD380DE0D8663" id="6" hide_in_REST="true">
+		<field name="ID" uuid="85FE98131A7C40EB91F7887B71A43BFC" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="7B5CA58EF1D645F0BF3777E4564946EC" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="doc" uuid="76B463FA3A324E8AA96E927A62DD0AA8" type="21" blob_switch_size="2147483647" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="85FE98131A7C40EB91F7887B71A43BFC"/>
+		<table_extra input_form="in" output_form="out" trashed="true">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="561.015625" top="70.95703125" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="doc" uuid="2B3B550E8CB9415D88FDD3771FBE0032" id="7">
+		<field name="ID" uuid="4D4F0650996849D68BECCECCC198330C" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="wp" uuid="33AEE99FA4A04DA699DE00138507FA8E" type="21" blob_switch_size="2147483647" never_null="true" id="2"/>
+		<primary_key field_name="ID" field_uuid="4D4F0650996849D68BECCECCC198330C"/>
+		<table_extra output_form="out" input_form="in">
+			<editor_table_info displayable_fields_count="4">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="301.77734375" top="0" width="120" height="128.37890625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="0B92DEA01E7543BEB99A44E647C54697" type="7">
+		<field_ref uuid="4D4F0650996849D68BECCECCC198330C" name="ID">
+			<table_ref uuid="2B3B550E8CB9415D88FDD3771FBE0032" name="doc"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="207D58E02B8F421DB95E5A1E389325B7" type="7">
+		<field_ref uuid="CD7F453997FC4CA6BDE73ECF48E2CC9B" name="index">
+			<table_ref uuid="299C2A25C7094DB48BA87862515A7118" name="(PORTRAITS)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="firstnameLastname" uuid="28835C7ED6124399931029CAE074332F" type="1">
+		<field_ref uuid="495D5684674E408C9D143B8C4E0E678F" name="firstname">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+		<field_ref uuid="30241093FD3E4030B00198C252FC1CAA" name="lastname">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="3A0BD4C9AE4C4BCFA9E6F899D4A952F1" type="7">
+		<field_ref uuid="85FE98131A7C40EB91F7887B71A43BFC" name="ID">
+			<table_ref uuid="17BC51C0200A42A889BFD380DE0D8663" name="(reports)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="lastnameFirstname" uuid="40917A504BD5405191D2CEBDD099615F" type="1">
+		<field_ref uuid="30241093FD3E4030B00198C252FC1CAA" name="lastname">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+		<field_ref uuid="495D5684674E408C9D143B8C4E0E678F" name="firstname">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="74DD5D0BBCFE42D78DD4D370B93088F5" type="7">
+		<field_ref uuid="62ED083567D94B2EB28F28D75367D874" name="ID">
+			<table_ref uuid="299C2A25C7094DB48BA87862515A7118" name="(PORTRAITS)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="799991F73BED4B718660485F5D7B52FA" type="1">
+		<field_ref uuid="495D5684674E408C9D143B8C4E0E678F" name="firstname">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="96BDCD0283174ECF943CA335EB14D5BB" type="7">
+		<field_ref uuid="D39A288DA08A478BA662B880E2033C34" name="ID">
+			<table_ref uuid="DB7A1291307E4D54AA66A64E7BCB393E" name="(MEN)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B12189B4E7AC470484AC25F104AEB000" type="7">
+		<field_ref uuid="59154BF11E6742F3AB46A099CEA5A4AC" name="ID">
+			<table_ref uuid="389879CCACD747E99460D249A379CF0D" name="(WOMEN)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B8463663E18F47E9B3F0C63B525E4D42" type="7">
+		<field_ref uuid="F0269E704B0B4D1DA6523D08F53E0995" name="ID">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="DE237B7BFF0040BABBBBC19024D69C8B" type="7">
+		<field_ref uuid="D5F66279C09841AC856E1252C1B71CAF" name="ID">
+			<table_ref uuid="6D2C4CFB485A483784BEDEB5143C94DC" name="(FACES)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="E36D7D0182F148038C0863CAFADF9827" type="1">
+		<field_ref uuid="30241093FD3E4030B00198C252FC1CAA" name="lastname">
+			<table_ref uuid="B2EE8676BD5348C1996D747A4F908EC5" name="people"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0" package_name="Genealogy_3" structure_file_name="Genealogy" data_file_path=":Genealogy.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>
